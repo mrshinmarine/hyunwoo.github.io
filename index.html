@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>자유주의로!</title>
+<script> alert('공부할 준비가 됐습니까?'); </script>
+<!--index.html이기에 style.css링크걸지 않았습니다-->
+<style>
+	div#header {
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding:5px
+	}
+	div#nav {
+	line-height:30px;
+	background-color:#eeeeee;
+	img-align:center;
+	height:700px;
+	width:200px;
+	float:left;
+	padding:5px;
+	}
+	div#section {
+	width:650px;
+	img-align:center;
+	float:left;
+	padding:10px;
+	}
+	div#footer {
+	background-color:black;
+	color:white;
+	clear:both;
+	text-align:right;
+	padding:5px;
+	}
+</style>
+</HEAD>
+	
+<BODY>
+
+<div id="header">
+<h1> Go to liberalism</h1>
+</div>
+
+<div id="nav">
+	<a href="index.html">
+	<img src="Taegeukgi.jpg" width="200" style="float:center"/></a>
+<ul>
+	<li><a href="TV journalism.html">TV journalism</a></li>
+	<li><a href="Online journalism.html">Online journalism</a></li>
+    <li><a href="what.html">what?</a></li>
+    <li><a href="why.html">why?</a></li>
+    <li><a href="who.html">who?</a></li>
+	<li><a href="추천언론인.html">추천 언론인</a></li> 	
+	<li><a href="통일준비.html">진정한 통일준비란?</a></li>
+	<li><a href="태극기 그리기.html">태극기 그리기</a></li> 
+
+</ul>
+</div>
+
+<div id="section">
+<img src="독립선언.jpg" width="600" height="400" style="float:center"/>
+
+</div>
+
+<div id="footer">
+연락처: harryshin96@kw.ac.kr
+<div id="digitalClock"></div>
+<script>
+	function digitalClock(){
+	var today = new Date();
+	var day = today.getMonth() + 1 + "월" + today.getDate() + "일";
+	var time = today.getHours() + "분" + today.getSeconds() + "초";
+	
+	document.getElementById("digitalClock").innerHTML = day + time;
+	setTimeout('digitalClock()', 1000);
+	}
+	digitalClock();
+</script>
+</div>
+
+</BODY>
+</html>
